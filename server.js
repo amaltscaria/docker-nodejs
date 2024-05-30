@@ -1,12 +1,11 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 
 const app = express();
 
 let userGoal = 'Learn Docker!';
 
 app.use(
-  bodyParser.urlencoded({
+  express.urlencoded({
     extended: false,
   })
 );
